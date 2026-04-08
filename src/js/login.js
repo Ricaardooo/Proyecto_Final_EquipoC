@@ -47,7 +47,7 @@ if (loginForm && emailInput && passwordInput) {
     }
 
     formFeedback.textContent =
-      "Inicio de sesión validado correctamente. Esta base está lista para conectarse con futuras páginas.";
+      "Inicio de sesión validado correctamente. La base quedó lista para conectar páginas futuras.";
     loginForm.reset();
   });
 }
