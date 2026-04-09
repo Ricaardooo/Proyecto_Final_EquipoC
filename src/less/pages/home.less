@@ -1,46 +1,50 @@
-.hero {
-    background: @primary;
-    color: @white;
-    padding: 60px 0;
-
-    .hero-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .hero-card {
-        background: @white;
-        color: @dark;
-        padding: 20px;
-        border-radius: @radius;
-        box-shadow: @shadow;
-    }
-}
-
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.info-card {
-    background: @white;
-    padding: 20px;
-    border-radius: @radius;
-    box-shadow: @shadow;
-}
-
-
-
-
-
 @media (max-width: 768px) {
     .hero-grid {
         grid-template-columns: 1fr;
     }
 
+    .hero-copy {
+        text-align: center;
+    }
+
+    .hero-card {
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 0.95rem;
+    }
+
     .cards-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+.hero-card {
+    background: @white;
+    color: @dark;
+    padding: 20px;
+    border-radius: @radius;
+    box-shadow: @shadow;
+    width: 100%; // 🔥 IMPORTANTE
+}
+
+.hero {
+    padding: 40px 0;
+
+    @media (max-width: 768px) {
+        padding: 30px 0;
+    }
+}
+
+.hero-card {
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
     }
 }
