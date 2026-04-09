@@ -1,0 +1,37 @@
+.faq{
+
+    .faq-list{
+        margin-top:20px;
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .faq-item{
+        background:@white;
+        border-radius:@radius;
+        box-shadow:@shadow;
+        overflow:hidden;
+    }
+
+    .faq-question{
+        width:100%;
+        padding:15px;
+        border:none;
+        background:@primary;
+        color:white;
+        text-align:left;
+        cursor:pointer;
+    }
+
+    .faq-answer{
+        display:none;
+        padding:15px;
+    }
+
+    .faq-item.active{
+        .faq-answer{
+            display:block;
+        }
+    }
+}
