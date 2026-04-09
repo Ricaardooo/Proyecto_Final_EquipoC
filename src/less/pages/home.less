@@ -1,0 +1,46 @@
+.hero {
+    background: @primary;
+    color: @white;
+    padding: 60px 0;
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .hero-card {
+        background: @white;
+        color: @dark;
+        padding: 20px;
+        border-radius: @radius;
+        box-shadow: @shadow;
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: @white;
+    padding: 20px;
+    border-radius: @radius;
+    box-shadow: @shadow;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

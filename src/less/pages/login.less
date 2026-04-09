@@ -1,0 +1,44 @@
+.auth-main {
+    background: @light;
+}
+
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.auth-card {
+    background: @white;
+    padding: 25px;
+    border-radius: @radius;
+    box-shadow: @shadow;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border-radius: @radius;
+        border: 1px solid #ccc;
+    }
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .auth-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-copy {
+        text-align: center;
+    }
+}

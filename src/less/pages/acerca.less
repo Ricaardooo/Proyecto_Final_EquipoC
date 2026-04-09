@@ -1,0 +1,36 @@
+.page-hero {
+    background: @primary;
+    color: @white;
+    padding: 60px 0;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.content-card {
+    background: @white;
+    padding: 20px;
+    border-radius: @radius;
+    box-shadow: @shadow;
+}
+
+.clean-list {
+    padding-left: 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

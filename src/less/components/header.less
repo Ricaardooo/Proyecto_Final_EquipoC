@@ -1,0 +1,80 @@
+.site-header {
+    background: @primary;
+    padding: 15px 0;
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: @white;
+        text-decoration: none;
+    }
+
+    .logo-img {
+        width: 40px;
+    }
+
+    .brand-text small {
+        display: block;
+        font-size: 0.7rem;
+    }
+
+    .main-nav a {
+        color: @white;
+        margin-left: 15px;
+        text-decoration: none;
+
+        &:hover {
+            color: @secondary;
+        }
+    }
+
+    .active-link {
+        border-bottom: 2px solid @secondary;
+    }
+}
+
+
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: @white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: @primary;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+}
