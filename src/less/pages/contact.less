@@ -1,0 +1,49 @@
+.contact{
+
+    .contact-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+        margin-top:20px;
+
+        @media(max-width:768px){
+            grid-template-columns:1fr;
+        }
+    }
+
+    .contact-form{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+
+        input, textarea{
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:@radius;
+        }
+
+        textarea{
+            min-height:120px;
+        }
+
+        button{
+            background:@primary;
+            color:white;
+            border:none;
+            padding:10px;
+            border-radius:@radius;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darken(@primary, 10%);
+        }
+    }
+
+    .contact-info{
+        background:@white;
+        padding:20px;
+        border-radius:@radius;
+        box-shadow:@shadow;
+    }
+}
