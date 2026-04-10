@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="es">
+<head>
+  {{> head title="Catálogo"}}
+</head>
+<body>
+  {{> header}}
+
+  <main class="catalogo-page">
+    <section class="catalogo-hero">
+      <div class="container">
+        <h1>Catálogo de Productos</h1>
+        <p>
+          Descubre nuestra variedad de equipos tecnológicos, accesorios y soluciones
+          ideales para estudio, trabajo, oficina y entretenimiento.
+        </p>
+      </div>
+    </section>
+
+    <section class="filtros container">
+      <button class="filtro-btn active" data-filter="all">Todos</button>
+      <button class="filtro-btn" data-filter="laptop">Laptops</button>
+      <button class="filtro-btn" data-filter="monitor">Monitores</button>
+      <button class="filtro-btn" data-filter="impresora">Impresoras</button>
+      <button class="filtro-btn" data-filter="parlante">Parlantes</button>
+      <button class="filtro-btn" data-filter="proyector">Proyectores</button>
+      <button class="filtro-btn" data-filter="accesorio">Accesorios</button>
+    </section>
+
+    <section class="catalogo container">
+      <div class="catalogo-grid">
+
+        <!-- LAPTOPS -->
+        <article class="catalogo-card" data-category="laptop">
+          <img src="/img/laptop.jpeg" alt="Laptop principal">
+          <div class="card-content">
+            <span class="categoria">Laptop</span>
+            <h3>Laptop de alto rendimiento</h3>
+            <p>Equipo ideal para oficina, estudio y tareas diarias con excelente desempeño.</p>
+            <span class="precio">L 15,500</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="laptop">
+          <img src="/img/laptop1.png" alt="Laptop 1">
+          <div class="card-content">
+            <span class="categoria">Laptop</span>
+            <h3>Laptop modelo 1</h3>
+            <p>Diseño moderno con buena capacidad para trabajo, estudio y navegación.</p>
+            <span class="precio">L 13,800</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="laptop">
+          <img src="/img/laptop2.png" alt="Laptop 2">
+          <div class="card-content">
+            <span class="categoria">Laptop</span>
+            <h3>Laptop modelo 2</h3>
+            <p>Ideal para clases virtuales, trabajo y productividad diaria.</p>
+            <span class="precio">L 14,200</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="laptop">
+          <img src="/img/laptop3.png" alt="Laptop 3">
+          <div class="card-content">
+            <span class="categoria">Laptop</span>
+            <h3>Laptop modelo 3</h3>
+            <p>Excelente opción para tareas académicas, oficina y uso doméstico.</p>
+            <span class="precio">L 12,900</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="laptop">
+          <img src="/img/laptop4.png" alt="Laptop 4">
+          <div class="card-content">
+            <span class="categoria">Laptop</span>
+            <h3>Laptop modelo 4</h3>
+            <p>Portátil práctica y funcional para trabajo, estudio y navegación web.</p>
+            <span class="precio">L 16,100</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- MONITORES -->
+        <article class="catalogo-card" data-category="monitor">
+          <img src="/img/monitor.jpeg" alt="Monitor principal">
+          <div class="card-content">
+            <span class="categoria">Monitor</span>
+            <h3>Monitor profesional</h3>
+            <p>Pantalla cómoda y funcional para mejorar la productividad en oficina.</p>
+            <span class="precio">L 5,900</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="monitor">
+          <img src="/img/monitor1.png" alt="Monitor 1">
+          <div class="card-content">
+            <span class="categoria">Monitor</span>
+            <h3>Monitor modelo 1</h3>
+            <p>Excelente calidad de imagen para oficina, estudio y uso profesional.</p>
+            <span class="precio">L 4,750</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="monitor">
+          <img src="/img/monitor2.png" alt="Monitor 2">
+          <div class="card-content">
+            <span class="categoria">Monitor</span>
+            <h3>Monitor modelo 2</h3>
+            <p>Diseño moderno con visualización clara y nítida para todo tipo de tareas.</p>
+            <span class="precio">L 5,200</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="monitor">
+          <img src="/img/monitor3.png" alt="Monitor 3">
+          <div class="card-content">
+            <span class="categoria">Monitor</span>
+            <h3>Monitor modelo 3</h3>
+            <p>Ideal para trabajo continuo, oficina y productividad diaria.</p>
+            <span class="precio">L 6,100</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- IMPRESORAS -->
+        <article class="catalogo-card" data-category="impresora">
+          <img src="/img/impresora.jpeg" alt="Impresora principal">
+          <div class="card-content">
+            <span class="categoria">Impresora</span>
+            <h3>Impresora multifuncional</h3>
+            <p>Ideal para tareas escolares, documentos de oficina y uso continuo.</p>
+            <span class="precio">L 6,850</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="impresora">
+          <img src="/img/impresora1.png" alt="Impresora 1">
+          <div class="card-content">
+            <span class="categoria">Impresora</span>
+            <h3>Impresora modelo 1</h3>
+            <p>Solución práctica para impresión frecuente en hogar y oficina.</p>
+            <span class="precio">L 5,400</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="impresora">
+          <img src="/img/impresora2.png" alt="Impresora 2">
+          <div class="card-content">
+            <span class="categoria">Impresora</span>
+            <h3>Impresora modelo 2</h3>
+            <p>Buen rendimiento, impresión clara y diseño compacto.</p>
+            <span class="precio">L 4,950</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="impresora">
+          <img src="/img/impresora3.png" alt="Impresora 3">
+          <div class="card-content">
+            <span class="categoria">Impresora</span>
+            <h3>Impresora modelo 3</h3>
+            <p>Excelente opción para oficina pequeña, negocio o uso doméstico.</p>
+            <span class="precio">L 6,200</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PARLANTES -->
+        <article class="catalogo-card" data-category="parlante">
+          <img src="/img/parlante1.png" alt="Parlante 1">
+          <div class="card-content">
+            <span class="categoria">Parlante</span>
+            <h3>Parlante portátil</h3>
+            <p>Sonido claro y potente, ideal para música y entretenimiento diario.</p>
+            <span class="precio">L 2,300</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="parlante">
+          <img src="/img/parlante2.png" alt="Parlante 2">
+          <div class="card-content">
+            <span class="categoria">Parlante</span>
+            <h3>Parlante modelo 2</h3>
+            <p>Diseño atractivo con audio de calidad para espacios pequeños.</p>
+            <span class="precio">L 1,950</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="parlante">
+          <img src="/img/parlante3.png" alt="Parlante 3">
+          <div class="card-content">
+            <span class="categoria">Parlante</span>
+            <h3>Parlante modelo 3</h3>
+            <p>Buena potencia y estilo moderno para uso personal o familiar.</p>
+            <span class="precio">L 2,650</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTORES -->
+        <article class="catalogo-card" data-category="proyector">
+          <img src="/img/proyector.jpeg" alt="Proyector principal">
+          <div class="card-content">
+            <span class="categoria">Proyector</span>
+            <h3>Proyector multimedia</h3>
+            <p>Perfecto para clases, reuniones, eventos y presentaciones profesionales.</p>
+            <span class="precio">L 10,250</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="proyector">
+          <img src="/img/proyector1.png" alt="Proyector 1">
+          <div class="card-content">
+            <span class="categoria">Proyector</span>
+            <h3>Proyector modelo 1</h3>
+            <p>Excelente opción para exposiciones y contenido audiovisual.</p>
+            <span class="precio">L 8,950</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="proyector">
+          <img src="/img/proyector2.png" alt="Proyector 2">
+          <div class="card-content">
+            <span class="categoria">Proyector</span>
+            <h3>Proyector modelo 2</h3>
+            <p>Compacto, práctico y funcional para distintos espacios.</p>
+            <span class="precio">L 9,400</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="catalogo-card" data-category="proyector">
+          <img src="/img/proyector3.png" alt="Proyector 3">
+          <div class="card-content">
+            <span class="categoria">Proyector</span>
+            <h3>Proyector modelo 3</h3>
+            <p>Ideal para presentaciones de calidad en oficina o estudio.</p>
+            <span class="precio">L 11,100</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- ACCESORIOS -->
+        <article class="catalogo-card" data-category="accesorio">
+          <img src="/img/mouse.jpeg" alt="Mouse">
+          <div class="card-content">
+            <span class="categoria">Accesorio</span>
+            <h3>Mouse ergonómico</h3>
+            <p>Accesorio práctico que brinda precisión y comodidad en el uso diario.</p>
+            <span class="precio">L 650</span>
+            <div class="card-buttons">
+              <button class="btn-carrito">Agregar al carrito</button>
+              <button class="btn-vermas">Ver más</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  {{> footer}}
+
+  <script type="module" src="/src/js/catalogo.js"></script>
+</body>
+</html>
