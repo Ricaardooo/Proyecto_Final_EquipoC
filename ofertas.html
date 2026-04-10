@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  {{>head title="Ofertas y Promociones" description="Ofertas de tecnología"}}
+</head>
+
+<body>
+
+{{>header isOffers=true}}
+
+<main class="ofertas">
+
+  {{>ofertas_hero}}
+
+  {{>carrusel_ofertas}}
+
+  {{>ofertas_grid}}
+
+</main>
+
+{{>footer}}
+
+<script src="/src/js/ofertas.js"></script>
+</body>
+</html>
