@@ -10,22 +10,28 @@ window.addEventListener("DOMContentLoaded", () => {
     let index = 0;
 
     function update() {
-        track.style.transform = `translateX(-${index * 100}%)`;
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${index * slideWidth}px)`;
     }
 
     next.addEventListener("click", () => {
-        index = (index + 1) % slides.length;
+        index++;
+        if (index >= slides.length) index = 0;
         update();
     });
 
     prev.addEventListener("click", () => {
-        index = (index - 1 + slides.length) % slides.length;
+        index--;
+        if (index < 0) index = slides.length - 1;
         update();
     });
 
     setInterval(() => {
-        index = (index + 1) % slides.length;
+        index++;
+        if (index >= slides.length) index = 0;
         update();
     }, 4000);
+
+    window.addEventListener("resize", update);
 
 });
