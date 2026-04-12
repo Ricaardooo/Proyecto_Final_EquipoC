@@ -1,3 +1,4 @@
+import '../less/main.less';
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
 
